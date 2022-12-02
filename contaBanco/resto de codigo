@@ -1,0 +1,9 @@
+incipal.java:8: error: cannot find symbol
+public String consultarSaldo(int senhaFora){
+    String retornoFalso = "Sem valor";
+    if (this.senha == senhaFora){
+        return saldo;
+        }else{
+            return retornoFalso;
+        }
+    }
