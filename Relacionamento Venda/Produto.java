@@ -5,12 +5,19 @@ public class Produto {
     private Double custo;
     private Double preco;
 
-    //Metodo
 
-    public void calculaPreco(){
-        this.preco = custo + (custo*0.25);
+    //Construtor
+    public Produto(int codigoFora, String descricaoFora, double custoFora){
+        this.codigo = codigoFora;
+        this.descricao = descricaoFora;
+        this.custo = custoFora;
+        calculaPreco();
     }
-
+    //Metodo
+    public double calculaPreco(){
+        return custo + (custo*0.25);
+    }
+    
     //getters
     public int getCodigo(){
         return this.codigo;
@@ -23,6 +30,16 @@ public class Produto {
     }
     public int getPreco(){
         return this.preco;
+    }
+    //seters
+    public void setCodigo(int codigoFora){
+        this.codigo = codigoFora;
+    }
+    public void setDescricao(String descricaoFora){
+        this.descricao = descricaoFora;
+    }
+    public void setCusto(Double custoFora){
+        this.custo = custoFora;
     }
 
 }

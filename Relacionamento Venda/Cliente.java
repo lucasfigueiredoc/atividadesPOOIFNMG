@@ -5,6 +5,13 @@ public class Cliente{
     private Double renda;
     private Double limiteDeCredito;
 
+    //Construtor
+    public Cliente(String nomeFora, String cpfFora, Double rendaFora){
+        this.nome = nomeFora;
+        this.cpf = cpfFora;
+        this.renda = rendaFora;
+      //  this.limiteDeCredito = limitedeCreditoFora;
+    }
 
     //metodos
     public void calculaLimite(){
@@ -19,9 +26,9 @@ public class Cliente{
         return this.cpf;
     }
     public Double getRenda(){
-        return this.Renda;
+        return this.renda;
     }
-    public Double getLimiDouble(){
+    public Double getlimiteDeCredito(){
         return this.limiteDeCredito;
     }
 
